@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: "Outfit", serif;
+    background-color: #1A2A33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #A8BFC9;
+}
+
+/* --Typographie-- */
+
+
+.heading-L{
+    font-size: 40px;
+    letter-spacing: 2.5px;
+}
+.heading-M{
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+.heading-S{
+    font-size: 20px;
+    letter-spacing: 1.25px;
+}
+.heading-XS{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.regular{
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+
+/* --Boutons-- */
+
+button{
+    border: none;
+}
+.btn-yellow-1{
+    border-radius: 15px;
+    background-color: #F2B137;
+    box-shadow: inset 0px -8px 0px 0px #CC8B13;
+}
+.btn-yellow-1:hover{
+    background-color: #FFC860;
+}
+
+.btn-blue{
+    border-radius: 15px;
+    background-color: #31C3BD;
+    box-shadow: inset 0px -8px 0px 0px #118C87; 
+}
+.btn-blue:hover{
+    background-color: #65E9E4;
+}
+
+.secondary-btn{
+    border-radius: 15px;
+    background-color: #A8BFC9;
+    box-shadow: inset 0px -8px 0px 0px #6B8997; 
+    padding: 5px;
+    width: 100%;
+}
+.secondary-btn:hover{
+    background-color: #DBE8ED;
+}
+
+/* Regular code */
+
+header{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.logo{
+    display: flex;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player-selector{
+    background-color: #1F3641;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border-radius: 15px;
+    padding: 24px;
+    gap: 15px;
+    margin-block: 32px;
+}
+.player-selector button{
+    box-shadow: none;
+}
+.button-selector{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color: #1A2A33;
+    border-radius: 15px;
+    padding: 5px;
+}
+#first-player-select-btn{
+    background-color: #1A2A33;
+}
+.game-choser{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 80%;
+}
+.game-choser button{
+    width: 100%;
+    padding: 14px 0px 22px 0px;
+}
+header .regular{
+    font-weight: 700;
+    padding: 5px;
+}
+
+
+
+@media screen and (min-width:768px){
+    .game-choser, .player-selector{
+        width: 60%;
+    }
+}
+@media screen and (min-width:1440px){
+    .game-choser, .player-selector{
+        width: 30%;
+    }
+}
