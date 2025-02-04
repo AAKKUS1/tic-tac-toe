@@ -49,6 +49,7 @@ button{
     border-radius: 15px;
     background-color: #F2B137;
     box-shadow: inset 0px -8px 0px 0px #CC8B13;
+    padding: 10px;
 }
 .btn-yellow-1:hover{
     background-color: #FFC860;
@@ -67,22 +68,49 @@ button{
     border-radius: 15px;
     background-color: #A8BFC9;
     box-shadow: inset 0px -8px 0px 0px #6B8997; 
-    padding: 5px;
+    padding: 10px;
     width: 100%;
 }
 .secondary-btn:hover{
     background-color: #DBE8ED;
 }
 
+.return-btn{
+    background-color: #A8BFC9;
+    border-radius: 10px;
+    padding: 12px 12px;
+    box-shadow: inset 0px -4px 0px 0px #6B8997; 
+    height: fit-content ;
+    width: fit-content ;
+    justify-self: end;
+    align-self: end;
+} 
+
+#turn-button{
+    background-color: #1F3641;
+    box-shadow:inset 0px -6px 0px 0px #10212A !important;
+    padding: 3px 15px 10px 15px;
+    color: #A8BFC9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: fit-content !important;
+    height: fit-content ;
+    align-self: end;
+    gap: 10px;
+}
+
 /* Regular code */
 
 header{
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
+    display:flex;
+    justify-content: space-between;
+    width: 18%;
 }
 .logo{
     display: flex;
+    align-self: end;
 }
 main{
     width: 100%;
@@ -129,11 +157,71 @@ main{
 }
 header .regular{
     font-weight: 700;
-    padding: 5px;
 }
-
-
-
+#turn-button svg{
+    width: 30%;
+}
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(3,95px);
+    grid-template-rows: repeat(5,96px);
+    grid-gap: 20px;
+}
+.box{
+    background-color: #1F3641;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow:inset 0px -6px 0px 0px #10212A;
+}
+.box:hover svg{
+    fill: none;
+    outline:solid 1px blue;
+}
+.stat-displayer{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #1A2A33;
+    height: 60%;
+    padding: 10px;
+}
+#stat1{
+    background-color:#31C3BD;
+}
+#stat2{
+    background-color: #F2B137;
+}
+#ties{
+    background-color: #A8BFC9;
+}
+.banner-topper{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.463);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.banner{
+    width: 100%;
+    height: 50%;
+    background-color: #1F3641;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.option-choser{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+}
 @media screen and (min-width:768px){
     .game-choser, .player-selector{
         width: 60%;
